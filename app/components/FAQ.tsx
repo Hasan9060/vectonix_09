@@ -96,7 +96,10 @@ export default function FAQ() {
 
                   {/* Answer Content with Smooth Animation */}
                   <div
-                    ref={el => contentRefs.current[index] = el}
+                   ref={(el) => {
+  contentRefs.current[index] = el;
+}}
+
                     className="overflow-hidden transition-all duration-700 ease-in-out"
                     style={{
                       maxHeight: isOpen ? `${heights[index]}px` : '0px',
