@@ -18,7 +18,7 @@ export default function Footer() {
       links: [
         { name: 'Documentation', href: '#' },
         { name: 'Help Center', href: '#contact' },
-        { name: 'Blog', href: '#' },
+        { name: 'Blog', href: '/blog' },
         { name: 'Tutorials', href: '#contact' },
         { name: 'API Reference', href: '#' },
       ],
