@@ -124,9 +124,9 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 py-24 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8">
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-gray-400 text-white mb-8">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-            <span className="text-sm font-semibold">AI Agents Marketplace</span>
+            <span className="text-black text-sm font-semibold">AI Agents Marketplace</span>
           </div>
 
           {/* Heading */}
