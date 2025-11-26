@@ -150,7 +150,7 @@ export default function Pricing() {
                   {/* Price */}
                   <div className="mb-8">
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-bold text-gray-900">
+                      <span className="text-4xl font-bold text-green-500">
                         {price}
                       </span>
                       <span className="text-gray-500">

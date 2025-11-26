@@ -29,34 +29,6 @@ export const SERVICES: Service[] = [
     botCount: '85+ bots',
     icon: '🛒'
   },
-  {
-    id: 'education',
-    title: 'Education',
-    description: 'Student support, course management, and learning assistance',
-    botCount: '70+ bots',
-    icon: '🎓'
-  },
-  {
-    id: 'travel',
-    title: 'Travel & Hospitality',
-    description: 'Hotel booking, travel planning, and tourism assistance bots',
-    botCount: '50+ bots',
-    icon: '✈️'
-  },
-  {
-    id: 'real-estate',
-    title: 'Real Estate',
-    description: 'Property management, client relations, and market analysis',
-    botCount: '65+ bots',
-    icon: '🏠'
-  },
-  {
-    id: 'freelancing',
-    title: 'Freelancing & Services',
-    description: 'Project management, client communication, and workflow automation',
-    botCount: '55+ bots',
-    icon: '💼'
-  }
 ];
 
 export const BOT_PACKAGES: BotPackage[] = [

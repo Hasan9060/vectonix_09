@@ -26,10 +26,10 @@ export default function Tools() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-700 mb-6"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-blue-100 text-black mb-6"
                     >
-                        <Sparkles size={16} />
-                        <span className="text-sm font-bold">Premium Tools & Services</span>
+                        <Sparkles size={16} className='text-orange-700' />
+                        <span className="text-sm font-bold ">Premium Tools & Services</span>
                     </motion.div>
 
                     <motion.h2
@@ -66,10 +66,10 @@ export default function Tools() {
                         >
                             {/* Category Badge */}
                             <div className="flex items-center justify-between mb-4">
-                                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-orange-50 text-orange-600 border border-orange-100">
+                                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-orange-50 text-blue-600 border border-orange-100">
                                     {tool.category}
                                 </span>
-                                <span className="text-2xl font-bold text-orange-600">
+                                <span className="text-2xl font-bold text-green-500">
                                     {convertPrice(parsePriceToPKR(tool.price))}
                                 </span>
                             </div>
@@ -96,7 +96,7 @@ export default function Tools() {
 
                             {/* View Details Button */}
                             <Link href={`/tools/${tool.slug}`}>
-                                <button className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 text-white font-bold hover:shadow-lg hover:shadow-orange-500/25 transition-all group-hover:gap-3">
+                                <button className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-black text-white font-bold hover:shadow-lg hover:shadow-orange-500/25 transition-all group-hover:gap-3">
                                     View Details
                                     <ArrowRight size={18} />
                                 </button>
@@ -114,7 +114,7 @@ export default function Tools() {
                     className="text-center"
                 >
                     <Link href="/tools">
-                        <button className="inline-flex items-center gap-3 px-10 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 text-white font-bold text-lg hover:shadow-xl hover:shadow-orange-500/30 transition-all hover:scale-105">
+                        <button className="inline-flex items-center gap-3 px-10 py-4 rounded-xl bg-black text-white font-bold text-lg hover:shadow-xl hover:shadow-orange-500/30 transition-all hover:scale-105">
                             View All {TOOLS.length} Tools
                             <ArrowRight size={24} />
                         </button>

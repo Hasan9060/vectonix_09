@@ -1,16 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #171717;
+  /* Light Mode - Warm & Peaceful */
+  --background: #fdfcf8;
+  /* Warm off-white, easier on eyes than #ffffff */
+  --foreground: #2d2a26;
+  /* Soft charcoal, less harsh than pure black */
   --card-bg: #ffffff;
-  --border-color: #e5e7eb;
-  --gradient-primary: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fbbf24 100%);
-  --gradient-secondary: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #fb923c 100%);
-  --shadow-sm: 0 2px 4px rgba(249, 115, 22, 0.05);
-  --shadow-md: 0 4px 12px rgba(249, 115, 22, 0.1);
-  --shadow-lg: 0 12px 32px rgba(249, 115, 22, 0.15);
-  --shadow-xl: 0 20px 48px rgba(249, 115, 22, 0.2);
+  --border-color: #e7e5e4;
+
+  /* Softer, more sophisticated gradients */
+  --gradient-primary: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #fbbf24 100%);
+  --gradient-secondary: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #f97316 100%);
+
+  /* Softer shadows with less aggressive coloring */
+  --shadow-sm: 0 2px 4px rgba(234, 88, 12, 0.03);
+  --shadow-md: 0 4px 12px rgba(234, 88, 12, 0.06);
+  --shadow-lg: 0 12px 32px rgba(234, 88, 12, 0.08);
+  --shadow-xl: 0 20px 48px rgba(234, 88, 12, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode - Deep & Restful */
+    --background: #0f0f10;
+    /* Deep, rich dark gray/black */
+    --foreground: #e2e2e2;
+    /* Soft white text */
+    --card-bg: #18181b;
+    /* Slightly lighter for cards */
+    --border-color: #27272a;
+
+    /* Adjusted gradients for dark mode to be less blinding */
+    --gradient-primary: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #f59e0b 100%);
+    --gradient-secondary: linear-gradient(135deg, #9a3412 0%, #c2410c 50%, #ea580c 100%);
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.5);
+  }
 }
 
 @theme inline {

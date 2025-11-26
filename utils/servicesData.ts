@@ -23,7 +23,7 @@ export const SERVICES: Service[] = [
         slug: 'web-development',
         title: 'Web Development',
         icon: 'Code',
-        tagline: 'Build powerful websites that drive results',
+        tagline: 'Build powerful websites',
         description: 'Custom website development with modern technologies. Create fast, responsive, and SEO-friendly websites that convert visitors into customers.',
         longDescription: 'Our web development service delivers custom-built websites using the latest technologies like React, Next.js, and modern frameworks. We create responsive, fast-loading websites optimized for search engines and user experience. Whether you need a simple landing page or a complex web application, we build solutions that grow with your business.',
         features: ['Responsive Design', 'Modern Tech Stack', 'SEO Optimized', 'Fast Loading Speed', 'Mobile-First Approach', 'Custom Functionality', 'Security Best Practices', 'Cross-Browser Compatible', 'Easy Content Management', 'Ongoing Support'],

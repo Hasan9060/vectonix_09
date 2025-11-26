@@ -5,6 +5,13 @@ import { Search, ArrowRight, Package, Wrench, Bot } from 'lucide-react';
 import { TOOLS } from '@/utils/toolsData';
 import { SERVICES } from '@/utils/servicesData';
 import { BOT_PACKAGES } from '@/utils/constants';
+import { Domine } from "next/font/google";
+
+const domine = Domine({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
 
 export default function Hero() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -126,15 +133,15 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-gray-400 text-white mb-8">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-            <span className="text-black text-sm font-semibold">AI Agents Marketplace</span>
+            <span className="text-sm font-semibold">AI Agents Marketplace</span>
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 leading-tight">
-            Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400">VECTONIX</span>
+          <h1 className={`${domine.className} text-3xl md:text-6xl font-bold text-white mb-6 leading-tight`}>
+            Find the right service without  <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400">stress <span className='text-white'>or</span> high cost.</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-500 mb-12 leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-300 mb-12 leading-relaxed">
             Your one-stop destination for premium AI agents, tools, and services. Transform your business with cutting-edge technology.
           </p>
 

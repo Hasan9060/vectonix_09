@@ -92,14 +92,14 @@ export default function OurServices() {
                                 className="group relative"
                             >
                                 <div className={`h-full p-8 rounded-3xl bg-white border-2 transition-all duration-500 ${isHovered
-                                        ? 'border-orange-500 shadow-2xl shadow-orange-500/20 -translate-y-2'
-                                        : 'border-gray-200 shadow-lg hover:shadow-xl'
+                                    ? 'border-orange-500 shadow-2xl shadow-orange-500/20 -translate-y-2'
+                                    : 'border-gray-200 shadow-lg hover:shadow-xl'
                                     }`}>
                                     {/* Icon */}
                                     <div className="mb-6">
                                         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-500 ${isHovered
-                                                ? 'bg-gradient-to-br from-orange-500 to-orange-600 scale-110'
-                                                : 'bg-gradient-to-br from-gray-100 to-gray-200'
+                                            ? 'bg-gradient-to-br from-orange-500 to-orange-600 scale-110'
+                                            : 'bg-gradient-to-br from-gray-100 to-gray-200'
                                             }`}>
                                             <IconComponent size={32} className={`transition-colors duration-500 ${isHovered ? 'text-white' : 'text-gray-700'
                                                 }`} />
@@ -115,10 +115,6 @@ export default function OurServices() {
                                         {service.tagline}
                                     </p>
 
-                                    <p className="text-gray-600 mb-6 leading-relaxed line-clamp-3">
-                                        {service.description}
-                                    </p>
-
                                     {/* Features Preview */}
                                     <div className="space-y-2 mb-6">
                                         {service.features.slice(0, 3).map((feature, idx) => (
@@ -128,20 +124,11 @@ export default function OurServices() {
                                             </div>
                                         ))}
                                     </div>
-
-                                    {/* Pricing Preview */}
-                                    <div className="mb-6 pb-6 border-b border-gray-200">
-                                        <div className="text-sm text-gray-500 mb-1">Starting from</div>
-                                        <div className="text-3xl font-bold text-gray-900">
-                                            {convertPrice(parsePriceToPKR(service.pricing.basic))}
-                                        </div>
-                                    </div>
-
                                     {/* CTA Link */}
                                     <Link href={`/services/${service.slug}`}>
                                         <button className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${isHovered
-                                                ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg'
-                                                : 'bg-gray-900 text-white hover:bg-gray-800'
+                                            ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg'
+                                            : 'bg-gray-900 text-white hover:bg-gray-800'
                                             }`}>
                                             Learn More
                                             <ArrowRight size={18} className={`transition-transform duration-300 ${isHovered ? 'translate-x-1' : ''}`} />
